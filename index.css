@@ -101,12 +101,6 @@
     color: white;
 }
 
-.btn.ghost {
-    background: transparent;
-    color: white;
-    border: 1px solid rgba(255, 255, 255, 0.12);
-}
-
 .btn:hover {
     transform: translateY(-4px);
     transition: all .18s ease;
@@ -208,4 +202,5 @@
         height: 68vh;
         min-height: 480px;
     }
+
 }
