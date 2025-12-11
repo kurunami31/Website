@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Student Event & Academic Scheduler</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="navbar.css" />
+  <link rel="stylesheet" href="index.css" />
+  <script src="script.js" defer></script>
+</head>
+<body class="landing-body">
+  <!-- Shared Navigation Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="header-left">
+        <img src="A modern tech-inspire.png" alt="FourBit Alliance Logo" class="logo" />
+      </div>
+
+      <div class="header-center">
+        <h1 class="header-title">Student Event & Academic Scheduler</h1>
+      </div>
+
+      <nav class="header-right" aria-label="Main navigation">
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+          <span class="sr-only">Open navigation</span>
+          ☰
+        </button>
+
+        <div id="navMenu" class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="schedule.html">Manage Schedule</a>
+          <a href="login.html" class="btn small">Login</a>
+          <a href="register.html" class="btn small alt">Create Account</a>
+
+          <div class="user-dropdown" id="navUser">
+            <button id="userDropdownBtn" class="user-name" aria-haspopup="true" aria-expanded="false">
+              <img id="navAvatar" src="6522516" alt="Avatar" />
+              <span id="navUsername">Guest ▾</span>
+            </button>
+
+            <div class="dropdown-content" id="userDropdownMenu" aria-label="User menu">
+              <a href="profile.html">View Profile</a>
+              <button id="dropdownLogout" class="link-like">Logout</button>
+            </div>
+          </div>
+
+          <button id="darkModeToggle" class="icon-btn" aria-pressed="false" title="Toggle dark mode">🌓</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section with Video Background -->
+  <section class="hero">
+    <div class="video-background" aria-hidden="true">
+      <video autoplay muted loop id="bgVideo" playsinline>
+        <source src="Background.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <div class="hero-overlay glass">
+      <h2>Plan smarter. Organize better. Achieve more.</h2>
+      <p class="lead">An elegant scheduler built for students — keep classes, events, and community activities in one place.</p>
+
+      <div class="hero-buttons">
+        <a href="login.html" class="btn primary">Login</a>
+        <a href="register.html" class="btn secondary">Create Account</a>
+        <a href="schedule.html" class="btn ghost">Manage Schedule</a>
+      </div>
+
+      <div class="hero-controls">
+        <button id="videoToggle" class="icon-btn" title="Pause / Play background video">⏸</button>
+        <a href="#features" class="chevron" aria-label="Scroll to features"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="features">
+    <h2>Why Use This Scheduler?</h2>
+    <div class="feature-grid" role="list">
+      <article class="feature-card glass" role="listitem">
+        <h3>Easy Scheduling</h3>
+        <p>Add, edit, and manage academic or community events in seconds.</p>
+      </article>
+
+      <article class="feature-card glass" role="listitem">
+        <h3>Secure Accounts</h3>
+        <p>Login and manage your schedules with protected sessions (integrate backend auth later).</p>
+      </article>
+
+      <article class="feature-card glass" role="listitem">
+        <h3>Accessible Anywhere</h3>
+        <p>Responsive design ensures you can plan events on any device.</p>
+      </article>
+    </div>
+
+    <div class="cta">
+      <a href="register.html" class="btn get-started">Get Started — it's free</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© FourBit Alliance 2025 — Student Event & Academic Scheduler</p>
+      <p class="small">Built with ♥ for students.</p>
+    </div>
+  </footer>
+</body>
+</html>

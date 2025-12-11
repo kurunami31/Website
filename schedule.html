@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Manage Schedule | Student Scheduler</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="navbar.css" />
+  <link rel="stylesheet" href="schedule.css" />
+  <script src="script.js" defer></script>
+</head>
+<body class="schedule-body">
+  <!-- Header (same markup used across pages) -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="header-left">
+        <img src="A modern tech-inspire.png" alt="FourBit Alliance Logo" class="logo" />
+      </div>
+      <div class="header-center">
+        <h1 class="header-title">Student Event & Academic Scheduler</h1>
+      </div>
+      <nav class="header-right" aria-label="Main navigation">
+        <button class="nav-toggle" id="navToggle2" aria-expanded="false" aria-controls="navMenu2">☰</button>
+        <div id="navMenu2" class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="schedule.html">Manage Schedule</a>
+          <a href="profile.html">Profile</a>
+          <button id="darkModeToggle2" class="icon-btn" aria-pressed="false">🌓</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="schedule" class="schedule-wrapper">
+      <h2>Manage Schedule</h2>
+      <p class="intro">Add, edit, or remove events. This demo stores events locally in your browser (per user).</p>
+
+      <table id="scheduleTable" class="styled-table" aria-describedby="schedule-description">
+        <caption id="schedule-description" class="sr-only">Your saved events</caption>
+        <thead>
+          <tr><th>Date</th><th>Event</th><th>Category</th><th>Actions</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <div class="form-card glass">
+        <h3>Add New Event</h3>
+        <form id="addEventForm">
+          <label for="date">Date</label>
+          <input type="date" id="date" required />
+
+          <label for="eventName">Event Name</label>
+          <input type="text" id="eventName" placeholder="Event title" required />
+
+          <label for="category">Category</label>
+          <select id="category" required>
+            <option value="Academic">Academic</option>
+            <option value="Sports">Sports</option>
+            <option value="Community">Community</option>
+            <option value="Personal">Personal</option>
+          </select>
+
+          <label for="notes">Notes (optional)</label>
+          <textarea id="notes" rows="3" placeholder="Details"></textarea>
+
+          <button type="submit" class="moving-btn">Add Event</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© FourBit Alliance 2025</p>
+    </div>
+  </footer>
+</body>
+</html>

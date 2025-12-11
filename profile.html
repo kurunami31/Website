@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Profile | Student Scheduler</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="navbar.css" />
+  <link rel="stylesheet" href="profile.css" />
+  <script src="script.js" defer></script>
+</head>
+<body class="landing-body">
+  <header class="site-header">
+    <div class="header-container">
+      <div class="header-left">
+        <img src="A modern tech-inspire.png" alt="FourBit Alliance Logo" class="logo" />
+      </div>
+      <div class="header-center">
+        <h1 class="header-title">Student Event & Academic Scheduler</h1>
+      </div>
+      <nav class="header-right">
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="schedule.html">Manage Schedule</a>
+          <button id="darkModeToggle3" class="icon-btn">🌓</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="profile-card glass" aria-labelledby="profileHeading">
+      <h2 id="profileHeading">Your Profile</h2>
+
+      <div class="profile-avatar">
+        <img id="profileImg" src="6522516" alt="Profile avatar" />
+        <input id="avatarUpload" type="file" accept="image/*" />
+      </div>
+
+      <form id="profileForm" class="profile-grid">
+        <div class="profile-column">
+          <label for="pFullName">Full name</label>
+          <input id="pFullName" type="text" />
+
+          <label for="pEmail">Email</label>
+          <input id="pEmail" type="email" />
+        </div>
+
+        <div class="profile-column">
+          <label for="pPhone">Phone</label>
+          <input id="pPhone" type="tel" />
+
+          <label for="pBio">Bio</label>
+          <textarea id="pBio" rows="4"></textarea>
+        </div>
+
+        <div class="profile-actions">
+          <button type="submit" class="profile-btn">Save</button>
+          <p id="profileMessage" class="profile-message" aria-live="polite"></p>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© FourBit Alliance 2025 — Student Event & Academic Scheduler</p>
+    </div>
+  </footer>
+</body>
+</html>

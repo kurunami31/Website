@@ -1,0 +1,134 @@
+/* profile.css */
+.landing-body,
+.schedule-body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #071326, #082033);
+    color: #ecf0f1;
+}
+
+.profile-card {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.04);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+.profile-card h2 {
+    color: #3aa4ff;
+    text-align: center;
+}
+
+.profile-avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.profile-avatar img {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(255, 255, 255, 0.06);
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.profile-column label {
+    display: block;
+    margin-top: 8px;
+    color: #dff3ff;
+}
+
+.profile-column input,
+.profile-column textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    color: #e9f7ff;
+}
+
+.profile-actions {
+    grid-column: 1/-1;
+    text-align: center;
+    margin-top: 12px;
+}
+
+.profile-btn {
+    padding: 12px 18px;
+    background: #3aa4ff;
+    border: none;
+    border-radius: 10px;
+    color: #042035;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.profile-message {
+    color: #8bf0a7;
+    margin-top: 8px;
+}
+
+/* responsive */
+@media (max-width:840px) {
+    .profile-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* Ensure body uses flex layout to push footer down */
+.landing-body,
+.schedule-body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #071326, #082033);
+    color: #ecf0f1;
+}
+
+/* Ensure body uses flex layout to push footer down */
+.landing-body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #071326, #082033);
+  color: #ecf0f1;
+}
+
+/* Allow main content to grow and push footer */
+main {
+  flex: 1;
+}
+
+/* Footer styling */
+.site-footer {
+  margin-top: auto;         /* pushes footer to bottom */
+  text-align: center;       /* centers text horizontally */
+  padding: 16px;
+  color: #9fc8da;
+  font-size: 14px;
+}
+/* Center profile card vertically and horizontally */
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+/* Optional: limit height if needed */
+.profile-card {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto; /* horizontal centering */
+}

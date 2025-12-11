@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Create Account | Student Scheduler</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="navbar.css" />
+  <link rel="stylesheet" href="register.css" />
+  <script src="script.js" defer></script>
+</head>
+<body class="register-body">
+  <header class="register-header">
+    <img src="A modern tech-inspire.png" alt="FourBit Alliance Logo" class="register-logo" />
+    <h1>Student Event & Academic Scheduler</h1>
+    <p class="register-subtitle">Where you will never worry to miss schedules</p>
+  </header>
+
+  <main class="register-main">
+    <section class="form-section glass">
+      <h2>Create Account</h2>
+      <form id="registerForm">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" required />
+
+        <label for="registerEmail">Email</label>
+        <input type="email" id="registerEmail" required />
+
+        <label for="registerPassword">Password</label>
+        <input type="password" id="registerPassword" required />
+
+        <button type="submit" class="register-btn">Register</button>
+      </form>
+
+      <p id="registerMessage" aria-live="polite"></p>
+      <p class="register-note">Already have an account? <a href="login.html">Login here</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© FourBit Alliance 2025</p>
+    </div>
+  </footer>
+</body>
+</html>

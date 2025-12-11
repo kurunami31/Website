@@ -1,0 +1,109 @@
+/* schedule.css */
+:root {
+    --glass-bg: rgba(255, 255, 255, 0.06);
+    --accent: #3aa4ff;
+    --muted: #9aa7b2;
+}
+
+.schedule-body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #071326 0%, #081f30 100%);
+    color: #ecf0f1;
+    display: flex;
+    flex-direction: column;
+}
+
+.schedule-wrapper {
+    max-width: 1100px;
+    margin: 32px auto;
+    padding: 0 16px 80px;
+    width: 100%;
+}
+
+h2 {
+    color: var(--accent);
+    margin-bottom: 8px;
+}
+
+.intro {
+    color: #cfe9ff;
+    margin-bottom: 18px;
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.03);
+    color: #e9f6ff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+}
+
+.styled-table thead tr {
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 10px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+    font-size: .95rem;
+}
+
+.styled-table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.form-card {
+    margin-top: 20px;
+    padding: 18px;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-card label {
+    display: block;
+    margin: 10px 0 6px;
+    font-weight: 600;
+    color: #dff3ff;
+}
+
+.form-card input,
+.form-card select,
+.form-card textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    background: rgba(255, 255, 255, 0.02);
+    color: #eaf7ff;
+}
+
+.moving-btn {
+    margin-top: 12px;
+    width: 100%;
+    padding: 12px;
+    background: var(--accent);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.moving-btn:hover {
+    transform: translateY(-3px);
+}
+
+/* small screen */
+@media (max-width:760px) {
+
+    .styled-table th,
+    .styled-table td {
+        font-size: .85rem;
+        padding: 10px 6px;
+    }
+}

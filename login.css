@@ -1,0 +1,137 @@
+/* login.css - homepage-inspired version */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: linear-gradient(180deg, #0b1226, #071326);
+  color: #ecf0f1;
+}
+
+.login-body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-header {
+  text-align: center;
+  padding: 36px 16px 6px;
+}
+
+.login-logo {
+  width: 84px;
+  display: block;
+  margin: 0 auto 8px;
+}
+
+.login-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.form-section {
+  max-width: 420px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.4);
+}
+
+.form-section h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.form-section label {
+  display: block;
+  margin-bottom: 6px;
+  color: #dfeefc;
+  font-size: 14px;
+}
+
+.form-section input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  border: 1px solid #2c3e50;
+  background: #0b1a2f;
+  color: #e6f7ff;
+  font-size: 15px;
+}
+
+.form-section input:focus {
+  outline: 2px solid #3aa4ff;
+  outline-offset: 2px;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #3aa4ff, #2ecc71);
+  border: none;
+  color: #042035;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.login-btn:hover {
+  background: linear-gradient(90deg, #2f8fe0, #27ae60);
+  transform: translateY(-1px);
+}
+
+.login-btn:focus-visible {
+  outline: 2px solid #a3f7bf;
+  outline-offset: 2px;
+}
+
+.login-note {
+  margin-top: 12px;
+  text-align: center;
+  color: #9fc8da;
+  font-size: 14px;
+}
+
+.login-note a {
+  color: #aee6ff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.login-note a:hover {
+  text-decoration: underline;
+}
+/* Video background */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1; /* behind everything */
+}
+
+/* Overlay to keep content readable */
+.overlay {
+  background: rgba(7, 19, 38, 0.7); /* semi-transparent dark layer */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
